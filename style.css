@@ -1,1 +1,24 @@
+.box {
+    background: lightblue;
+    margin: 20px; 
+    width: 100px; 
+    height: 100px;
+    text-align: center; 
+}
+
+/* To make it look better, add flexbox */ 
+/* TRANSFORM is a property with function values that change elements in various ways */ 
+
+#rotate {
+    transform: rotate(-20deg);
+}
+
+#scale{
+    transform: scale(.5);
+    /* scale (1) is original, scale less than 1 is smaller and greater than 1 is bigger */ 
+}
+
+#skewed{
+    transform: skewed;
+}
 
