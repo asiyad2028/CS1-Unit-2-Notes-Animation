@@ -10,7 +10,7 @@
 /* TRANSFORM is a property with function values that change elements in various ways */ 
 
 #rotate {
-    transform: rotate(-20deg);
+    transform: rotate(-21deg);
 }
 
 #scale{
@@ -19,6 +19,16 @@
 }
 
 #skewed{
-    transform: skewed;
+    transform:skew(-21deg);
+}
+
+#translated{
+    transform:translate(210px,-30px);
+    /* translate(x) moves to the right (if x is positive) translate (x,y) moves diagonally, translate (0,y) moves down (only along Y axis) */
+}
+
+/* you can chain multiple trnsoforms on the same element */
+#chain{
+    transform: rotate(95deg); skew (-10deg); 
 }
 
