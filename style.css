@@ -1,3 +1,33 @@
+/* STEP 1 is to configure an element to be animated*/
+#animated-shape{
+    background: skyblue;
+    width: 200px;
+    height:200px;
+    /* sub-properties to attach an animation*/
+    animation-name: colorchange-alt; 
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+/*STEP 2 is to define an animation sequence*/
+@keyframes colorchange {
+    from {background:skyblue;}
+    to{background:purple;}
+}
+@keyframes colorchange-alt {
+    0% {backgrund:skyblue;}
+    50% {
+        background:purple;
+        transform: scale(0.5)rotate(360deg);
+    }
+    100% {background:skyblue;}
+}
+
+
+
+
+
+
 .box {
     background: lightblue;
     margin: 20px; 
@@ -29,6 +59,6 @@
 
 /* you can chain multiple trnsoforms on the same element */
 #chain{
-    transform: rotate(95deg); skew (-10deg); 
+    transform: rotate(5deg); skew (10deg); 
 }
 
