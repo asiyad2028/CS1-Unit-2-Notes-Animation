@@ -1,3 +1,28 @@
+/* Step 1- to configure an element to be animated
+using the shortcut animation property which combinds name, duration, iteration count, and timing function into one line */ 
+
+#animated-emoji{
+    font-size: 40px;
+    display: inline-block; /* spin in place */
+    animation: move-emoji 2s infinite ease-in-out; 
+}
+/* step 2- define an animation sequence */
+@keyframes move-emoji {
+    0% {
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg) scale(2);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
 /* STEP 1 is to configure an element to be animated*/
 #animated-shape{
     background: skyblue;
@@ -5,7 +30,7 @@
     height:200px;
     /* sub-properties to attach an animation*/
     animation-name: colorchange-alt; 
-    animation-duration: 15s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
@@ -22,11 +47,6 @@
     }
     100% {background:skyblue;}
 }
-
-
-
-
-
 
 .box {
     background: lightblue;
